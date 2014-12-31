@@ -1,0 +1,25 @@
+{
+  "name": "angular-konami",
+  "version": "0.0.1",
+  "homepage": "https://github.com/optyler/angular-konami",
+  "authors": [
+    "optyler <optyler@gmail.com>"
+  ],
+  "description": "A directive that listen for the konami code on a element and broadcast an event when the code is correctly executed",
+  "main": "angular-konami.js",
+  "keywords": [
+    "konami",
+    "code",
+    "angular",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
