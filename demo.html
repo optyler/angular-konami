@@ -25,12 +25,12 @@
       // HOW TO USE IT
       var ngDemo = angular.module('ngDemo', ['angular-konami']);
       ngDemo.controller('MyCtrl', function ($scope) {
-          $scope.isKonamiEnable = false;
+        $scope.isKonamiEnable = false;
       
-          $scope.$on('konami-code-ok', function () {
-      	$scope.isKonamiEnable = true;
-      	$scope.$apply();
-          });
+        $scope.$on('konami-code-ok', function () {
+          $scope.isKonamiEnable = true;
+      	  $scope.$apply();
+        });
       });
     </script>
   </body>
