@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Demo</title>
+    <link rel="stylesheet" href="demo/style.css" />
   </head>
 
   <body ng-app="ngDemo" konami-code>
@@ -21,17 +22,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
     <script src="angular-konami.js"></script>
 
-    <script>
-      // HOW TO USE IT
-      var ngDemo = angular.module('ngDemo', ['angular-konami']);
-      ngDemo.controller('MyCtrl', function ($scope) {
-        $scope.isKonamiEnable = false;
-      
-        $scope.$on('konami-code-ok', function () {
-          $scope.isKonamiEnable = true;
-      	  $scope.$apply();
-        });
-      });
-    </script>
+    <script src="demo/demo.js"></script>
+
   </body>
 </html>

@@ -1,9 +1,5 @@
 var ngKonami = angular.module('angular-konami', []);
 
-// THE CODE
-/**
- * Better to use on body element or any element using correctly the keydwon event... ;-)
- */
 ngKonami.directive("konamiCode", function ($rootScope) {
 
     return {
@@ -16,7 +12,7 @@ ngKonami.directive("konamiCode", function ($rootScope) {
             var checkTheKonamiCode = function (event) {
                 if (event.which === konami_keys[konami_index++]) {
                     if (konami_index === konami_keys.length) {
-                        $rootScope.$broadcast('konami-code-ok');
+                        $rootScope.$broadcast('konami-code-ok', event.target);
                         element.off('keydown', checkTheKonamiCode);
                     }
                 } else {

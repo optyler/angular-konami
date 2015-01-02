@@ -1,0 +1,24 @@
+.rainbow {
+  -webkit-animation: rainbow 5s linear 0s infinite alternate; /* Chrome, Safari, Opera */
+  animation:         rainbow 5s linear 0s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+  0% { background: red }
+  16% { background: yellow }
+  33% { background: orange }
+  50% { background: green }
+  66% { background: blue }
+  83% { background: indigo }
+  100% { background: violet }
+}
+@keyframes rainbow { 
+  0% { background: red }
+  16% { background: yellow }
+  33% { background: orange }
+  50% { background: green }
+  66% { background: blue }
+  83% { background: indigo }
+  100% { background: violet }
+}
